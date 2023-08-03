@@ -12,8 +12,8 @@
 
 <form action="https://test.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-<input type=hidden name="oid" value="00D6D0000003Uxn">
-<input type=hidden name="retURL" value="http://google.com">
+<input type=hidden name="oid" value="00D1e0000000p18">
+<input type=hidden name="retURL" value="http://test.salesforce.com">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -41,9 +41,27 @@
 
 <label for="country">Country</label><input  id="country" maxlength="40" name="country" size="20" type="text" /><br>
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+Theater:<select  id="00N5g00000FycJy" name="00N5g00000FycJy" title="Theater"><option value="">--None--</option><option value="Asia Pacific">Asia Pacific</option>
+<option value="Australia">Australia</option>
+<option value="Central America and the Caribbean">Central America and the Caribbean</option>
+<option value="Europe">Europe</option>
+<option value="Middle East and Africa">Middle East and Africa</option>
+<option value="New Zealand">New Zealand</option>
+<option value="North America">North America</option>
+<option value="South America">South America</option>
+</select><br>
 
-<label for="description">Description</label><textarea name="description"></textarea><br>
+Contact Language:<select  id="00N5g00000FycFE" name="00N5g00000FycFE" title="Contact Language"><option value="">--None--</option><option value="Dutch">Dutch</option>
+<option value="English">English</option>
+<option value="French">French</option>
+<option value="German">German</option>
+<option value="Italian">Italian</option>
+<option value="Spanish">Spanish</option>
+</select><br>
+
+Lead Manufacturer:<select  id="00N5g00000FycHK" name="00N5g00000FycHK" title="Lead Manufacturer"><option value="">--None--</option><option value="SunPower">SunPower</option>
+<option value="Partner">Partner</option>
+</select><br>
 
 <label for="lead_source">Lead Source</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Affiliate">Affiliate</option>
 <option value="Affiliate – Marketing owned">Affiliate – Marketing owned</option>
@@ -56,6 +74,7 @@
 <option value="Dealer">Dealer</option>
 <option value="Dealer Referral">Dealer Referral</option>
 <option value="Direct Mail">Direct Mail</option>
+<option value="Email">Email</option>
 <option value="Email Campaign">Email Campaign</option>
 <option value="Event">Event</option>
 <option value="Event/Seminar/Webinar">Event/Seminar/Webinar</option>
@@ -96,22 +115,6 @@
 
 Survey Opt In:<input  id="00N5g00000FycJa" name="00N5g00000FycJa" type="checkbox" value="1" /><br>
 
-Lead Manufacturer:<select  id="00N5g00000FycHK" name="00N5g00000FycHK" title="Lead Manufacturer"><option value="">--None--</option><option value="SunPower">SunPower</option>
-<option value="Partner">Partner</option>
-</select><br>
-
-Dealer Name:<input  id="00N5g00000FycFj" maxlength="100" name="00N5g00000FycFj" size="20" type="text" /><br>
-
-Theater:<select  id="00N5g00000FycJy" name="00N5g00000FycJy" title="Theater"><option value="">--None--</option><option value="Asia Pacific">Asia Pacific</option>
-<option value="Australia">Australia</option>
-<option value="Central America and the Caribbean">Central America and the Caribbean</option>
-<option value="Europe">Europe</option>
-<option value="Middle East and Africa">Middle East and Africa</option>
-<option value="New Zealand">New Zealand</option>
-<option value="North America">North America</option>
-<option value="South America">South America</option>
-</select><br>
-
 WebForm Name:<select  id="00N5g00000QzFwC" name="00N5g00000QzFwC" title="WebForm Name"><option value="">--None--</option><option value="BENL-SYSTEM BE NL Contact Us Form W2L">BENL-SYSTEM BE NL Contact Us Form W2L</option>
 <option value="IT-SYSTEM IT Contact Us Form W2L">IT-SYSTEM IT Contact Us Form W2L</option>
 <option value="UK-SYSTEM UK Contact Us Form W2L">UK-SYSTEM UK Contact Us Form W2L</option>
@@ -137,6 +140,8 @@ WebForm Name:<select  id="00N5g00000QzFwC" name="00N5g00000QzFwC" title="WebForm
 </select><br>
 
 Web To Lead:<input  id="00N5g00000QzFwD" name="00N5g00000QzFwD" type="checkbox" value="1" /><br>
+
+Dealer Name:<input  id="00N5g00000FycFj" maxlength="100" name="00N5g00000FycFj" size="20" type="text" /><br>
 
 <input type="submit" name="submit">
 
